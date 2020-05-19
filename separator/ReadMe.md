@@ -18,4 +18,14 @@ The progress bar on the bottom will show the use the progress of the process. On
 There are 5 main functions defined in this program
 
 ### retrieve_input():
-This is used to assist tkinter
+This is used to assist tkinter to get the user input for location of source and destination. 
+
+### bar():
+This functinon starts the progress bar and calls segregate(source, dest)
+When finished, it prints a finshed message. 
+
+### segregate(source, destination):
+Using the source and destination provided by the use, the function iterates over all files and adds them to folders created for every 2.5 GB worht of files. When a new directory needs to be created, it is done using the function below.
+
+### createDirectory(destination, new):
+Creates a new directory for 2.5 GB and returnds a new destination for the files to be moved.
